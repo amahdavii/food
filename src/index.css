@@ -1,0 +1,33 @@
+@import url("/assets/fonts.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Yekan Bakh";
+  min-height: 100vh;
+  user-select: none;
+}
+
+.input:focus,
+.input:focus-within {
+  outline-width: 0;
+  outline-offset: 0;
+}
+
+.btn.btn-disabled,
+.btn[disabled],
+.btn:disabled {
+  background: #ffc2c1;
+  color: #fff;
+}
